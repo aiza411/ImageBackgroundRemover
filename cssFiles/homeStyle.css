@@ -1,0 +1,136 @@
+@import "~bootstrap/scss/bootstrap";
+
+* {
+    font-family: "Quicksand", sans-serif;
+}
+
+.logoImage {
+    height: 40px;
+}
+
+header {
+    background-image: linear-gradient(109.6deg, rgba(15, 2, 2, 1) 11.2%, rgba(36, 163, 190, 1) 91.1%);
+}
+
+.nav-link {
+    font-weight: 600;
+    border-radius: 45px;
+    padding: 10px;
+}
+
+.active {
+    font-weight: 700;
+}
+
+
+.nav-item:hover {
+    background-image: linear-gradient(109.6deg, rgb(255, 255, 255) 11.2%, rgba(36, 163, 190, 1) 91.1%);
+    animation-name: navLinkAnimation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    color: rgb(0, 0, 0);
+}
+
+
+@keyframes navLinkAnimation {
+    0% {
+        background-image: linear-gradient(109.6deg, rgb(255, 255, 255) 11.2%, rgba(36, 163, 190, 1) 91.1%);
+        opacity: 0.3;
+        font-weight: 500;
+        border-radius: 15px;
+    }
+
+    25% {
+        background-image: linear-gradient(109.6deg, rgb(255, 255, 255) 11.2%, rgba(36, 163, 190, 1) 91.1%);
+        opacity: 0.5;
+        font-weight: 525;
+        border-radius: 25px;
+    }
+
+    50% {
+        background-image: linear-gradient(109.6deg, rgb(255, 255, 255) 11.2%, rgba(36, 163, 190, 1) 91.1%);
+        opacity: 0.7;
+        font-weight: 550;
+        border-radius: 35px;
+    }
+
+    100% {
+        background-image: linear-gradient(109.6deg, rgb(255, 255, 255) 11.2%, rgba(36, 163, 190, 1) 91.1%);
+        opacity: 1;
+        font-weight: 600;
+        border-radius: 45px;
+    }
+}
+
+
+
+
+.Downloadbutton:hover {
+    animation: wiggle 2s linear infinite;
+}
+
+@keyframes wiggle {
+
+    0%,
+    7% {
+        transform: rotateZ(0);
+    }
+
+    15% {
+        transform: rotateZ(-15deg);
+    }
+
+    20% {
+        transform: rotateZ(10deg);
+    }
+
+    25% {
+        transform: rotateZ(-10deg);
+    }
+
+    30% {
+        transform: rotateZ(6deg);
+    }
+
+    35% {
+        transform: rotateZ(-4deg);
+    }
+
+    40%,
+    100% {
+        transform: rotateZ(0);
+    }
+}
+
+.Downloadbutton {
+    background-image : linear-gradient(99.6deg, rgb(255, 255, 255) 11.2%, rgba(36, 163, 190, 1) 91.1%);
+    border-top: 3px solid rgba(36, 163, 190, 1);
+    border-radius: 0 0 0.4em 0.2em;
+    font-size: 1em;
+    transform-origin: 50% 5em;
+}
+
+
+.landingPageVideo{
+    border-radius: 20px;
+    width: 500px;
+}
+
+
+.ChooseButton{
+    background-image : linear-gradient(180deg, rgb(255, 255, 255) 11.2%, rgba(36, 163, 190, 1) 91.1%);
+}
+
+
+.Downloadbutton2 {
+    background-image : url('/ImageBackgroundRemover/assets/downloadIcon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 20px;
+    border-radius: 50% 50%;
+}
+
+.mt-extra{
+    margin-top: 70px;
+}
